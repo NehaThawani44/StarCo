@@ -18,6 +18,46 @@ public class ECURow {
         this.shortName = shortName;
     }
 
+    public String getParentName() {
+        return parentName;
+    }
+
+    public void setParentName(String parentName) {
+        this.parentName = parentName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAmountOfConnectors() {
+        return amountOfConnectors;
+    }
+
+    public void setAmountOfConnectors(int amountOfConnectors) {
+        this.amountOfConnectors = amountOfConnectors;
+    }
+
+    public String getLongName() {
+        return longName;
+    }
+
+    public void setLongName(String longName) {
+        this.longName = longName;
+    }
+
+    public String getShortName() {
+        return shortName;
+    }
+
+    public void setShortName(String shortName) {
+        this.shortName = shortName;
+    }
+
     @Override
     public String toString() {
         return "ECURow{" +
@@ -28,6 +68,10 @@ public class ECURow {
                 ", longName='" + longName + '\'' +
                 ", shortName='" + shortName + '\'' +
                 '}';
+    }
+
+    public boolean hasChildren() {
+        return hasChildren;
     }
 }
 
